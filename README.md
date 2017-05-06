@@ -3,6 +3,14 @@ Awesome Tmux configuration.
 
 ![Tmux](https://cloud.githubusercontent.com/assets/5241553/25659319/cda06368-3039-11e7-9992-25dd7a416272.png)
 
+## Features
+- Designed for remote operation shortcuts, perfect implementation runs in the Tmux Tmux scenario.
+- Automatically connect to the last outgoing session, seamlessly the last operation (to prevent accidental exit and interrupt operation).
+- Shortcuts are reasonably assigned, and all shortcuts don't need to move your wrist :-).
+- Plugins installation and update, custom appearance, custom settings can be one key operation (set the shortcut to edit directly).
+- A command can be installed this configuration.
+- Urlview integration if available.
+
 ## Install Tmux
 
 ```
@@ -28,7 +36,7 @@ git clone https://github.com/erikw/tmux-powerline.git ~/.tmux-powerline
 git clone https://github.com/izuolan/.tmux.git ~/.tmux
 ln -sf ~/.tmux/powerline/mytheme.sh ~/.tmux-powerline/themes/mytheme.sh
 ln -sf ~/.tmux/powerline/tmux-powerlinerc ~/.tmux-powerlinerc
-mv ~/tmux.conf ~/.tmux.conf
+ln -sf ~/tmux.conf ~/.tmux.conf
 ```
 
 ## Init Plugins
@@ -37,3 +45,4 @@ mkdir -p ~/.tmux/plugins
 git clone https://github.com/tmux-plugins/tpm.git ~/.tmux/plugins/tpm
 ```
 Start up Tmux, and use 'Prefix+Shift+i' install plugins. (Default 'Prefix' is 'Ctrl+z')
+
